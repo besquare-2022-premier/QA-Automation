@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.10 on linux)" generated="20221205 17:36:02.426" rpa="false" schemaversion="3">
+<suite id="s1" name="Cart" source="/home/lashweenraj/Desktop/Quality Assurance/cart.robot">
+<test id="s1-t1" name="Open Merch-Paradise and view the searched item" line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.merch-paradise.xyz</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221205 17:36:02.528" level="INFO">Opening browser 'Chrome' to base url 'https://www.merch-paradise.xyz'.</msg>
+<status status="PASS" starttime="20221205 17:36:02.528" endtime="20221205 17:36:06.321"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221205 17:36:06.322" endtime="20221205 17:36:06.430"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div/div[1]/div[2]/img</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221205 17:36:06.430" endtime="20221205 17:36:06.990"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div/div[2]/div[2]/div</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221205 17:36:06.991" endtime="20221205 17:36:07.017"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div/div[1]/div[1]/div/button[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221205 17:36:07.017" level="INFO">Clicking button '//*[@id="root"]/div/div/div[1]/div[1]/div/button[1]'.</msg>
+<status status="PASS" starttime="20221205 17:36:07.017" endtime="20221205 17:36:07.087"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div/div/div</arg>
+<arg>30</arg>
+<arg>***till loginpage ***</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221205 17:36:07.087" endtime="20221205 17:36:07.110"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div/div/div[1]/div[2]/div/form/div[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221205 17:36:07.111" level="INFO">Clicking element '//*[@id="root"]/div/div/div/div[1]/div[2]/div/form/div[2]/a'.</msg>
+<status status="PASS" starttime="20221205 17:36:07.111" endtime="20221205 17:36:07.163"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="email"]</arg>
+<arg>jia.jun@besquare.com.my</arg>
+<arg>30</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221205 17:36:07.164" level="INFO">Typing text 'jia.jun@besquare.com.my' into text field '//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20221205 17:36:07.163" endtime="20221205 17:36:07.290"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//*[@id="password"]</arg>
+<arg>Pufferfish@2023</arg>
+<arg>30</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221205 17:36:07.290" level="INFO">Typing password into text field '//*[@id="password"]'.</msg>
+<msg timestamp="20221205 17:36:07.339" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221205 17:36:07.387" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221205 17:36:07.290" endtime="20221205 17:36:07.387"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>css:button[type=submit]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221205 17:36:07.387" level="INFO">Clicking button 'css:button[type=submit]'.</msg>
+<status status="PASS" starttime="20221205 17:36:07.387" endtime="20221205 17:36:07.444"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css:li input[placeholder="Search here"]</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221205 17:36:07.445" endtime="20221205 17:36:08.309"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:li input[placeholder="Search here"]</arg>
+<arg>Genshin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221205 17:36:08.310" level="INFO">Typing text 'Genshin' into text field 'css:li input[placeholder="Search here"]'.</msg>
+<status status="PASS" starttime="20221205 17:36:08.310" endtime="20221205 17:36:08.421"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>css:li input[placeholder="Search here"]</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221205 17:36:08.422" level="INFO">Sending key(s) ('RETURN',) to css:li input[placeholder="Search here"] element.</msg>
+<msg timestamp="20221205 17:36:08.722" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20221205 17:36:08.722" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20221205 17:36:08.421" endtime="20221205 17:36:08.742"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div[2]/div/main/section[1]/div/div[2]/div/div/div[1]/div[1]/a/div/img</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221205 17:36:08.743" endtime="20221205 17:36:09.454"/>
+</kw>
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div[2]/div/main/section[1]/div/div[2]/div/div/div[1]/div[1]/a/div/img</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20221205 17:36:09.457" level="INFO">Clicking image '//*[@id="root"]/div[2]/div/main/section[1]/div/div[2]/div/div/div[1]/div[1]/a/div/img'.</msg>
+<status status="PASS" starttime="20221205 17:36:09.455" endtime="20221205 17:36:09.528"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div[2]/main/div[1]/div[2]/section[1]/div/div/button</arg>
+<arg>30</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221205 17:36:09.528" level="INFO">Clicking ['button', 'input'] '//*[@id="root"]/div[2]/main/div[1]/div[2]/section[1]/div/div/button' with 30.</msg>
+<msg timestamp="20221205 17:36:09.736" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221205 17:36:09.736" level="FAIL">ValueError: '30' modifier does not match to Selenium Keys</msg>
+<status status="FAIL" starttime="20221205 17:36:09.528" endtime="20221205 17:36:09.737"/>
+</kw>
+<status status="FAIL" starttime="20221205 17:36:02.527" endtime="20221205 17:36:09.738">ValueError: '30' modifier does not match to Selenium Keys</status>
+</test>
+<status status="FAIL" starttime="20221205 17:36:02.427" endtime="20221205 17:36:09.739"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Cart">Cart</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
